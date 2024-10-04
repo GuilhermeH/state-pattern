@@ -7,8 +7,8 @@ Para cada ação possível existe uma implementação especializada que implemen
 
 Cada classe de especialista implementa a lógica de como as operações devem ser tratadas em cada status,
 
-Exemplo dentro de Program.cs
-Quanto tenta editar ou cancelar um documento no status Revisao ou Aprovado, a implementação lança uma mensagem de erro.
+Exemplo dentro de Program.cs:
+Quando tenta editar ou cancelar um documento no status Revisao ou Aprovado, a implementação lança uma mensagem de erro.
 
 
 Regras sugeridas:
