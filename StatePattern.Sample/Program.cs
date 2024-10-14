@@ -1,19 +1,19 @@
-﻿using StatePattern.Sample;
+﻿using StatePattern.Sample.Solution;
 
-Documento documento = new();
+Document documento = new();
 
-documento.Editar();
+documento.Edit();
 
-documento.EnviarParaRevisao();
+documento.SendToReview();
 
 // Tentar editar enquanto em revisão
-documento.Editar();
+documento.Edit();
 
 // Aprovar o documento
-documento.Aprovar();
+documento.Approve();
 
 // Tentar editar após aprovação
-documento.Editar();
+documento.Edit();
 
 // Cancelar após aprovação (não permitido)
-documento.Cancelar();
+documento.Cancel();
