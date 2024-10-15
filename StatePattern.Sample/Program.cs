@@ -1,19 +1,32 @@
-﻿using StatePattern.Sample.Solution;
+﻿using Problem = StatePattern.Sample.Problem;
+using Solution = StatePattern.Sample.Solution;
 
-Document documento = new();
+var documentoProblem = new Problem.Document();
 
-documento.Edit();
+documentoProblem.Edit();
 
-documento.SendToReview();
+documentoProblem.SendToReview();
 
-// Tentar editar enquanto em revisão
-documento.Edit();
+documentoProblem.Edit();
 
-// Aprovar o documento
-documento.Approve();
+documentoProblem.Approve();
 
-// Tentar editar após aprovação
-documento.Edit();
+documentoProblem.Edit();
 
-// Cancelar após aprovação (não permitido)
-documento.Cancel();
+documentoProblem.Cancel();
+
+Console.WriteLine("-------------");
+
+var documentoSolution = new Solution.Document();
+
+documentoSolution.Edit();
+
+documentoSolution.SendToReview();
+
+documentoSolution.Edit();
+
+documentoSolution.Approve();
+
+documentoSolution.Edit();
+
+documentoSolution.Cancel();

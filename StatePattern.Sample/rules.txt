@@ -1,0 +1,9 @@
+The following actions are possible for a Document: Edit, Send for review, Approve, Reject and Cancel.
+
+Suggested rules:
+
+Draft: Can be edited, sent for review, or canceled.
+In Review: Cannot be edited, but can be approved, rejected, or canceled.
+Approved: Cannot be edited, canceled, or sent for review again.
+Rejected: Can be edited, resent for review, or canceled.
+Canceled: Can no longer be modified.
